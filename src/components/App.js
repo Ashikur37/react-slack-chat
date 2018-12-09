@@ -10,10 +10,12 @@ const App = () => {
 		<Grid columns="equal" className="app">
 			<ColorPanel />
 			<SidePanel />
-			<Grid.Column>
+			<Grid.Column style={{ marginLeft: 320 }}>
 				<Messages />
 			</Grid.Column>
-			<MetaPanel />
+			<Grid.Column width={4}>
+				<MetaPanel />
+			</Grid.Column>
 		</Grid>
 	);
 };
